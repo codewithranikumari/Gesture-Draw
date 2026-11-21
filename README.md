@@ -2,31 +2,39 @@
 
 ### Draw in the Air. Create Without Touch.
 
-A touchless digital drawing application that uses hand gestures and real-time computer vision to draw through a webcam.
+Gesture Draw is a real-time, touchless drawing application that allows users to create digital artwork using hand gestures through a webcam.
+
+Built with Python, OpenCV and MediaPipe, it makes drawing interactive and fun using computer vision.
 
 ## ✨ Features
+
 - Real-time hand tracking
-- Air drawing using index finger
-- Pause drawing using OK/pinch gesture
-- Erase using a closed fist
-- Change colors using an open palm
+- Touchless air drawing
+- Gesture-based drawing controls
+- Multiple drawing colors
+- Eraser functionality
 - Interactive browser-based drawing studio
 - Save artwork as PNG
+- Camera standby mode
 
 ## 🖐️ Gesture Controls
 
 | Gesture | Action |
-|---|---|
+|:---:|---|
 | ☝️ Index Finger | Draw |
-| 🤏 Pinch | Pause |
-| ✊ Fist | Erase |
+| 🤏 Pinch (OK Sign) | Pause Drawing |
+| ✊ Closed Fist | Erase |
 | 🖐️ Open Palm | Change Color |
+| 🤘 Sign of the Horns | Close Studio / Camera Standby |
 
-## 🛠️ Technologies
+## 🛠️ Technologies Used
+
 - Python
 - OpenCV
 - MediaPipe
-- HTML, CSS & JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## 🚀 Installation & Setup
 
@@ -43,20 +51,34 @@ cd AirCanvas-Pro
 python -m venv .venv
 ```
 
-**3. Install dependencies**
+**3. Activate the environment**
 
 ```bash
 .venv\Scripts\activate
+```
+
+**4. Install dependencies**
+
+```bash
 python -m pip install -r requirements.txt
 ```
 
-**4. Run the application**
+**5. Run the application**
 
 ```bash
 python main.py
 ```
 
-Open: `http://127.0.0.1:8765/`
+Open your browser:
+
+`http://127.0.0.1:8765/`
+
+## 📌 Requirements
+
+- Python installed
+- Working webcam
+- Good lighting
+- Required Python dependencies
 
 ## 👩‍💻 Developer
 
