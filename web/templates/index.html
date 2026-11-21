@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3f1">
+  <title>Gesture Draw | Your Hands, Your Imagination</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="/" data-page-link="home" aria-label="Gesture Draw home">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>GESTURE<span class="brand-light">DRAW</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home" data-page-link="home" class="nav-link active">Home</a>
+      <a href="#how-it-works" data-scroll="how-it-works" class="nav-link">How it works</a>
+      <a href="#features" data-scroll="features" class="nav-link">Features</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page page-home active" data-page="home" id="home">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-pulse"></span> AI-POWERED AIR DRAWING STUDIO</div>
+          <h1>Turn your hand gestures into <span class="gradient-text">digital art.</span></h1>
+          <p class="hero-description">Your Hands. Your Imagination. No Touch Required. Create expressive strokes in the air with real-time hand tracking.</p>
+          <div class="hero-actions">
+            <button class="button button-primary" data-open-rules>Start creating <span aria-hidden="true">→</span></button>
+            <a class="button button-quiet" href="#how-it-works" data-scroll="how-it-works">Explore how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof"><span class="proof-icon">✳</span><span>Runs locally · Your camera stays on your device</span></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a tracked hand drawing a neon stroke">
+          <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+          <div class="art-grid"></div>
+          <svg class="hand-illustration" viewBox="0 0 360 330" role="img" aria-label="Hand gesture with tracking points">
+            <defs>
+              <linearGradient id="handFill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff6574"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+              <linearGradient id="stroke" x1="0" x2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#ff4658"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <path d="M92 231c-14-13-19-27-13-38 6-10 18-12 30-4l26 17-28-76c-5-13 1-24 13-27 12-3 20 4 25 17l23 58-19-106c-2-14 5-23 17-24 12-1 19 7 21 21l17 91-6-72c-1-14 6-22 18-22 12 0 18 8 19 21l4 79 4-49c1-13 9-19 20-18 12 1 17 10 16 22l-5 91c-2 43-27 68-72 70l-48 2c-31 1-47-17-62-53z" fill="url(#handFill)" stroke="#ffffff" stroke-opacity=".8" stroke-width="2"/>
+            <path d="M83 146c20-12 31-31 43-45 18-21 34-30 52-28 15 2 24 11 31 25 9-12 21-18 34-17 17 2 25 14 29 28 16-9 31-4 38 8 9 15 3 35-8 49" fill="none" stroke="url(#stroke)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+            <g fill="#ffffff" stroke="#ff4658" stroke-width="2"><circle cx="126" cy="104" r="5"/><circle cx="209" cy="98" r="5"/><circle cx="272" cy="109" r="5"/><circle cx="314" cy="132" r="5"/><circle cx="178" cy="184" r="5"/><circle cx="128" cy="210" r="5"/></g>
+            <g fill="none" stroke="#ffffff" stroke-opacity=".65" stroke-width="1.5"><path d="M126 104 178 184 209 98 272 109 314 132"/><path d="M128 210 178 184 209 98"/></g>
+          </svg>
+          <div class="tracking-label"><span class="tracking-dot"></span> HAND TRACKING ACTIVE</div>
+          <div class="art-chip chip-one">✦ <span>your canvas, in the air</span></div>
+          <div class="art-chip chip-two">✳ <span>real-time vision</span></div>
+        </div>
+      </section>
+
+      <section class="sample-guide shell" aria-label="Gesture highlights">
+        <div class="sample-guide-heading">
+          <div class="eyebrow">A FEW CONTROLS</div>
+          <h2>Three gestures. Endless creativity.</h2>
+        </div>
+        <div class="sample-guide-cards">
+          <article class="sample-guide-card"><span class="sample-guide-number" aria-hidden="true">01</span><span class="sample-guide-icon" aria-hidden="true">〰</span><div><strong>Draw</strong><small>Raise one finger and sketch in the air.</small></div></article>
+          <article class="sample-guide-card"><span class="sample-guide-number" aria-hidden="true">02</span><span class="sample-guide-icon" aria-hidden="true">||</span><div><strong>Pause</strong><small>Pinch when you want to stop a stroke.</small></div></article>
+          <article class="sample-guide-card"><span class="sample-guide-number" aria-hidden="true">03</span><span class="sample-guide-icon" aria-hidden="true">◉</span><div><strong>Change color</strong><small>Show your palm to switch colors.</small></div></article>
+        </div>
+      </section>
+
+      <section class="section shell" id="features">
+        <div class="section-heading"><div><div class="eyebrow">MADE FOR MAKING</div><h2>A more natural way to create.</h2></div><p>Everything you need to turn small gestures into big ideas.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card"><div class="feature-icon icon-purple">⌕</div><h3>AI Hand Detection</h3><p>MediaPipe tracks your hand landmarks as you move.</p><span class="card-index">01</span></article>
+          <article class="feature-card"><div class="feature-icon icon-cyan">〰</div><h3>Real-Time Air Drawing</h3><p>Watch your movements become strokes on a live canvas.</p><span class="card-index">02</span></article>
+          <article class="feature-card"><div class="feature-icon icon-pink">✳</div><h3>Smart Gesture Controls</h3><p>Draw, pause, erase, and switch color with simple gestures.</p><span class="card-index">03</span></article>
+          <article class="feature-card"><div class="feature-icon icon-blue">◉</div><h3>Creative Color Switching</h3><p>Cycle through a vivid palette and find your next color.</p><span class="card-index">04</span></article>
+        </div>
+      </section>
+
+      <section class="how-section" id="how-it-works">
+        <div class="shell how-inner">
+          <div><div class="eyebrow">FROM GESTURE TO ART</div><h2>Three steps.<br><span class="gradient-text">No canvas required.</span></h2><p>Gesture Draw uses your webcam and local hand tracking—your video is processed on your computer.</p></div>
+          <div class="step-list">
+            <article class="step"><span>01</span><div><h3>Read the gesture guide</h3><p>Know how to draw, pause, erase, and switch colors.</p></div></article>
+            <article class="step"><span>02</span><div><h3>Allow camera access</h3><p>Launch the studio when you are ready to create.</p></div></article>
+            <article class="step"><span>03</span><div><h3>Move and make</h3><p>See your live hand-tracked strokes appear instantly.</p></div></article>
+          </div>
+        </div>
+      </section>
+      <section class="closing shell"><div><span class="eyebrow">READY WHEN YOU ARE</span><h2>Your next idea is a gesture away.</h2></div><button class="button button-primary" data-open-rules>Start creating <span aria-hidden="true">→</span></button></section>
+    </section>
+
+    <section class="page page-rules shell" data-page="rules" hidden>
+      <button class="back-link" data-page-link="home">← Back to home</button>
+      <div class="rules-heading"><div class="eyebrow">BEFORE YOU BEGIN</div><h1>Know your <span class="gradient-text">gestures.</span></h1><p>Five simple controls keep your hands in the flow.</p></div>
+      <div class="rules-grid">
+        <article class="rule-card"><div class="rule-illustration">☝</div><div class="rule-number">RULE 01</div><h2>Index finger</h2><span class="action-tag action-draw">DRAW</span><p>Raise your index finger and keep your thumb apart. Move your hand to draw in the air.</p></article>
+        <article class="rule-card"><div class="rule-illustration">🤏</div><div class="rule-number">RULE 02</div><h2>Pinch to pause</h2><span class="action-tag action-pause">PAUSE</span><p>Bring your index finger and thumb close together to pause your stroke.</p></article>
+        <article class="rule-card"><div class="rule-illustration">✊</div><div class="rule-number">RULE 03</div><h2>Closed fist</h2><span class="action-tag action-erase">ERASER</span><p>Make a fist to erase unwanted marks. Open your hand to return to drawing.</p></article>
+        <article class="rule-card"><div class="rule-illustration">✋</div><div class="rule-number">RULE 04</div><h2>Open palm</h2><span class="action-tag action-color">CHANGE COLOR</span><p>Show your open palm briefly to move to the next drawing color.</p></article>
+        <article class="rule-card"><div class="rule-illustration" role="img" aria-label="Sign of the horns hand gesture">🤘</div><div class="rule-number">RULE 05</div><h2>Sign of the horns</h2><span class="action-tag action-exit">EXIT STUDIO</span><p>Hold this sign briefly to close the drawing studio and return home.</p></article>
+      </div>
+      <aside class="tips-panel"><div class="tips-title"><span>✦</span><div><h2>Quick setup</h2><p>A few small things make tracking work better.</p></div></div><ul><li>Allow camera access for Python in your system privacy settings.</li><li>Keep your hand visible inside the camera frame.</li><li>Use a well-lit space.</li><li>Keep a comfortable, steady distance from the camera.</li></ul></aside>
+      <div class="agreement"><label><input id="rules-accepted" type="checkbox"><span class="custom-check"></span><span>I have read and understood all the gesture controls.</span></label><button id="launch-studio" class="button button-primary" disabled>Launch Drawing Studio <span aria-hidden="true">→</span></button></div>
+      <p class="rules-error" id="rules-error" role="alert"></p>
+    </section>
+
+    <section class="page page-studio shell" data-page="studio" hidden>
+      <div class="studio-top"><div><button class="back-link" id="exit-studio">← Exit to home</button><div class="studio-title"><div class="eyebrow">YOUR CREATIVE SPACE</div><h1>Drawing studio</h1></div></div><div class="studio-status"><span class="status-pulse"></span><span id="camera-status">Waiting for camera…</span></div></div>
+      <div class="studio-layout">
+        <section class="video-card" id="video-card" aria-label="Live drawing canvas">
+          <div class="video-header"><div><span class="live-dot"></span> LIVE CANVAS</div><span id="hand-status">Waiting for hand</span></div>
+          <div class="video-stage" id="video-stage"><img id="camera-feed" alt="Live webcam feed with hand tracking and drawing canvas" hidden><div class="video-placeholder" id="video-placeholder"><div class="loader"></div><h2>Connecting to your camera</h2><p>Your live feed will appear here. Camera video stays on this computer.</p></div></div>
+          <div class="video-footer"><span id="gesture-status">Show your palm to draw</span><span>VIDEO PROCESSED LOCALLY</span></div>
+          <button id="fullscreen-drawing" class="fullscreen-button" type="button" aria-pressed="false"><span class="fullscreen-icon" aria-hidden="true">⛶</span><span id="fullscreen-label">Full screen drawing</span><kbd>F</kbd></button>
+        </section>
+        <aside class="tools-card">
+          <div class="tools-heading"><div><div class="eyebrow">STUDIO TOOLS</div><h2>Your palette</h2></div><span class="palette-mark">✦</span></div>
+          <p class="tools-help">Choose a color here or show an open palm to cycle.</p>
+          <div id="color-palette" class="color-palette" aria-label="Drawing colors"></div>
+          <div class="selected-color"><span id="selected-swatch"></span><span>Selected</span><strong id="selected-color-name">Loading…</strong></div>
+          <div class="tool-divider"></div>
+          <button id="toggle-eraser" class="tool-button"><span class="tool-button-icon">⌫</span><span><strong>Toggle eraser</strong><small>Fist gesture also erases</small></span><kbd>E</kbd></button>
+          <button id="clear-canvas" class="tool-button"><span class="tool-button-icon">⌧</span><span><strong>Clear canvas</strong><small>Remove all drawing marks</small></span><kbd>C</kbd></button>
+          <button id="save-artwork" class="tool-button"><span class="tool-button-icon">↓</span><span><strong>Save artwork</strong><small>Save a transparent PNG</small></span><kbd>S</kbd></button>
+          <div id="tool-message" class="tool-message" role="status"></div>
+          <div class="tool-note">Keyboard: <kbd>N</kbd> next color · <kbd>F</kbd> fullscreen · <kbd>Q</kbd> exit</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="/" data-page-link="home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>GESTURE<span class="brand-light">DRAW</span></span></a><span>Made for hands-on imagination.</span><span>Camera processing stays local.</span></footer>
+</body>
+</html>
